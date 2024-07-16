@@ -21,7 +21,7 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home/>,
+        element: <Dash/>,
       },
       {
         path: "/dash",

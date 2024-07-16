@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { BaseUrl } from '../constants/BaseUrl';
+import { ArrowBigUp, CookingPot, Soup, Users, Utensils } from 'lucide-react';
 
 function Stat() {
   const navigate = useNavigate();
@@ -73,11 +74,13 @@ function Stat() {
               <div className="row align-items-center">
                 <div className="col-icon">
                   <div className="icon-big text-center icon-primary bubble-shadow-small">
-                    <i className="fas fa-users"></i>
+                    {/* <i className="fas fa-users"></i> */}
+                    <Users color='white' />
                   </div>
                 </div>
                 <div className="col col-stats ms-3 ms-sm-0">
                   <div className="numbers">
+                
                     <p className="card-category">Total Orders</p>
                     <h4 className="card-title">{statistics.totalOrders}</h4>
                   </div>
@@ -91,8 +94,9 @@ function Stat() {
             <div className="card-body">
               <div className="row align-items-center">
                 <div className="col-icon">
-                  <div className="icon-big text-center icon-info bubble-shadow-small">
-                    <i className="fas fa-utensils"></i>
+                  <div className="icon-big text-center icon-secondary bubble-shadow-small">
+                    {/* <i className="fas fa-utensils"></i> */}
+                    <Utensils color='white' />
                   </div>
                 </div>
                 <div className="col col-stats ms-3 ms-sm-0">
@@ -110,8 +114,9 @@ function Stat() {
             <div className="card-body">
               <div className="row align-items-center">
                 <div className="col-icon">
-                  <div className="icon-big text-center icon-success bubble-shadow-small">
-                    <i className="fas fa-utensil-spoon"></i>
+                  <div className="icon-big text-center icon-danger bubble-shadow-small">
+                    {/* <i className="fas fa-utensil-spoon"></i> */}
+                    <Soup color="white" />
                   </div>
                 </div>
                 <div className="col col-stats ms-3 ms-sm-0">
@@ -129,8 +134,9 @@ function Stat() {
             <div className="card-body">
               <div className="row align-items-center">
                 <div className="col-icon">
-                  <div className="icon-big text-center icon-secondary bubble-shadow-small">
-                    <i className="fas fa-utensils"></i>
+                  <div className="icon-big text-center icon-warning bubble-shadow-small">
+                    {/* <i className="fas fa-utensils"></i> */}
+                    <CookingPot color="white" />
                   </div>
                 </div>
                 <div className="col col-stats ms-3 ms-sm-0">

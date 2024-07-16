@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../../assets/imgs/LOGO ONG-04.png'
+import { FileText, House, Truck } from 'lucide-react'
 function Aside() {
   return (
   <>
@@ -13,8 +14,7 @@ function Aside() {
                 src={Logo}
                 alt="navbar brand"
                 className="navbar-brand"
-                height="50"
-              />
+                height="50"/>
             </a>
             <div className="nav-toggle">
               <button className="btn btn-toggle toggle-sidebar">
@@ -34,14 +34,10 @@ function Aside() {
           <div className="sidebar-content">
             <ul className="nav nav-warning">
               <li className="nav-item active">
-                <a
-                  data-bs-toggle="collapse"
-                  href="#dashboard"
-                  className="collapsed"
-                  aria-expanded="false"
-                >
-                  <i className="fas fa-home"></i>
-                  <p>Dashboard</p>
+                <a data-bs-toggle="collapse" href="#dashboard" className="collapsed" aria-expanded="false">
+                  {/* <i className="fas fa-home"></i> */}
+                  <House color="white"/>
+                  <p className='mx-2'>Dashboard</p>
                   <span className="caret"></span>
                 </a>
               
@@ -49,8 +45,9 @@ function Aside() {
               
               <li className="nav-item">
                 <a data-bs-toggle="collapse" href="#maps">
-                  <i className="fas fa-map-marker-alt"></i>
-                  <p>Delivery</p>
+                  {/* <i className="fas fa-map-marker-alt"></i> */}
+                  <Truck color="white" />
+                  <p className='mx-2'>Delivery</p>
                   <span className="caret"></span>
                 </a>
                 <div className="collapse" id="maps">
@@ -70,8 +67,9 @@ function Aside() {
               </li>
               <li className="nav-item">
                 <a data-bs-toggle="collapse" href="#charts">
-                  <i className="far fa-chart-bar"></i>
-                  <p>Invoice</p>
+                  {/* <i className="far fa-chart-bar"></i> */}
+                  <FileText color="white" />
+                  <p className='mx-2'>Invoice</p>
                   <span className="caret"></span>
                 </a>
                 <div className="collapse" id="charts">

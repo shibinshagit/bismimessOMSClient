@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../../assets/imgs/LOGO ONG-04.png'
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import { Menu } from 'lucide-react';
 function Nav() {
 
     const navigate = useNavigate();
@@ -18,23 +19,15 @@ function Nav() {
 
 
 
-     <nav
-            className="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
-          >
+     <nav className="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
             <div className="container-fluid">
             
               <ul className="navbar-nav topbar-nav ms-md-auto align-items-center">
-              
-              
-                
+
                 <li className="nav-item topbar-icon dropdown hidden-caret">
-                  <a
-                    className="nav-link"
-                    data-bs-toggle="dropdown"
-                    href="#"
-                    aria-expanded="false"
-                  >
-                    <i className="fas fa-layer-group"></i>
+                  <a className="nav-link" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                    {/* <i className="fas fa-layer-group"></i> */}
+                    <Menu color="black" />
                   </a>
                   <div className="dropdown-menu quick-actions animated fadeIn">
                     <div className="quick-actions-header">
